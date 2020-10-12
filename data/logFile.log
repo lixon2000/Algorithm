@@ -1,0 +1,42 @@
+15:01:12.481 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:01:12.623 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:02:33.139 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:02:33.292 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:02:45.969 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:02:46.113 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:03:00.525 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:03:00.679 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:06:47.826 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:06:47.998 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:10:14.010 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:10:14.151 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:11:27.082 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:11:27.232 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:21:02.361 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:21:02.502 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:21:25.037 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:21:25.175 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:22:12.897 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:22:13.038 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:22:29.815 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:22:29.953 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:22:45.711 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:22:45.876 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:23:06.191 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:23:06.328 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:23:18.805 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:23:18.949 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:24:03.829 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:24:03.969 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:24:10.548 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:24:10.695 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:24:31.744 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:24:31.915 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:24:43.043 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:24:43.185 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:26:10.435 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:26:10.577 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:27:12.722 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:27:12.864 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml
+15:30:23.479 [main] INFO  com.lx.db.ConnectFactoryImpl - db has been created!
+15:30:23.615 [main] INFO  com.lx.db.ConnectFactoryImpl - load db config:cfg\ConfigMapper.xml

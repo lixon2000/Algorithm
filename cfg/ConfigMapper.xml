@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE configuration  
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">  
+<configuration>  
+	<settings>  
+	    <setting name="cacheEnabled" value="false" />  
+	    <setting name="defaultStatementTimeout" value="10"/> 
+	    <setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+    <environments default="st_base">  
+        <environment id="st_serverconfig">  
+            <transactionManager type="JDBC" />  
+            <dataSource type="POOLED">  
+                <property name="driver" value="com.mysql.jdbc.Driver" /> 
+                <property name="url" value="jdbc:mysql://127.0.0.1/sniper_serverconfig_design?autoconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8" />
+                <property name="username" value="root" />  
+                <property name="password" value="" />  
+                <property name="poolMaximumActiveConnections" value="20" />   
+                <property name="poolMaximumIdleConnections" value="10" />   
+                <property name="poolMaximumCheckoutTime" value="20000" />  
+                <property name="poolTimeToWait" value="20000" />         
+                <property name="poolPingEnabled" value="true"/>
+            	<property name="poolPingQuery" value="select 1 "/> 
+            	<property name="poolPingConnectionsNotUsedFor" value="360"/>
+            </dataSource>  
+        </environment> 
+        
+         <environment id="st_base">  
+            <transactionManager type="JDBC" />  
+            <dataSource type="POOLED">  
+                <property name="driver" value="com.mysql.jdbc.Driver" /> 
+                <property name="url" value="jdbc:mysql://192.168.2.204/sniper_config_design?autoconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8" />
+                <property name="username" value="root" />  
+                <property name="password" value="123456" />  
+                <property name="poolMaximumActiveConnections" value="20" />   
+                <property name="poolMaximumIdleConnections" value="10" />   
+                <property name="poolMaximumCheckoutTime" value="20000" />  
+                <property name="poolTimeToWait" value="20000" />         
+                <property name="poolPingEnabled" value="true"/>
+            	<property name="poolPingQuery" value="select 1 "/> 
+            	<property name="poolPingConnectionsNotUsedFor" value="360"/>
+            </dataSource>  
+        </environment> 
+        
+        <environment id="st_user">  
+            <transactionManager type="JDBC" />  
+            <dataSource type="POOLED">  
+                <property name="driver" value="com.mysql.jdbc.Driver" /> 
+                <property name="url" value="jdbc:mysql://127.0.0.1/sniper_user?autoconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8" />
+                <property name="username" value="root" />  
+                <property name="password" value="" />
+                <property name="poolMaximumActiveConnections" value="20" />   
+                <property name="poolMaximumIdleConnections" value="10" />   
+                <property name="poolMaximumCheckoutTime" value="20000" />  
+                <property name="poolTimeToWait" value="20000" />         
+                <property name="poolPingEnabled" value="true"/>
+            	<property name="poolPingQuery" value="select 1 "/> 
+            	<property name="poolPingConnectionsNotUsedFor" value="360"/>
+            </dataSource>  
+        </environment> 
+    </environments>
+
+ 
+</configuration>  

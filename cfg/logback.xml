@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <appender name="FILE"
+            class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>./data/logFile.log</file>
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                    <!-- daily rollover -->
+                    <fileNamePattern>./data/zip/logFile.%d{yyyy-MM-dd}.%i.zip</fileNamePattern>
+
+                    <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                            <!-- or whenever the file size reaches 200MB -->
+                            <maxFileSize>200MB</maxFileSize>
+                    </timeBasedFileNamingAndTriggeringPolicy>
+
+                    <!-- keep 30 days' worth of history -->
+                    <maxHistory>20</maxHistory>
+            </rollingPolicy>
+
+            <encoder>
+                    <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{30} - %msg%n
+                    </pattern>
+                    <!--pattern>%-4relative [%thread] %-5level %logger{20} - %msg%n</pattern -->
+            </encoder>
+    </appender>
+	
+	<appender name="IO_FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>./data/srv/io.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- daily rollover -->
+			<fileNamePattern>./data/srv/zip/io.%d{yyyy-MM-dd}.zip</fileNamePattern>
+
+			<!-- keep 30 days' worth of history -->
+			<maxHistory>4</maxHistory>
+		</rollingPolicy>
+
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{30} - %msg%n
+			</pattern>
+			<!--pattern>%-4relative [%thread] %-5level %logger{20} - %msg%n</pattern -->
+		</encoder>
+	</appender>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{30} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+
+
+	<logger name="com.ft.client.StClientHandler" level="OFF" />
+	<logger name="org.apache.ibatis" level="OFF" />
+	<logger name="com.feelingtouch.stwar4.sql" level="OFF" />
+	<!-- Strictly speaking, the level attribute is not necessary since -->
+	<!-- the level of the root level is set to DEBUG by default. -->
+	<root level="DEBUG">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE" />
+	</root>
+
+	<logger name="com.ft.io.service.IOCodec" level="DEBUG">
+		<appender-ref ref="IO_FILE" />
+	</logger>
+	
+	<logger name="com.ft.core.RPCMessageStoreImpl" level="OFF" />
+	<logger name="com.ft.core.bus" level="OFF" />
+ 	<logger name="com.ft.core.component" level="OFF" />
+	<logger name="com.ft.service.refresh" level="OFF" />
+	<logger name="com.ft.componet.event" level="OFF" />
+	<logger name="org.apache.ibatis" level="OFF" />
+	<logger name="org.mongodb.driver.cluster" level="OFF" />
+	<logger name="org.mongodb.driver.protocol" level="OFF" />
+	<logger name="io.jpower.kcp.netty.sheduleUpdate" level="OFF" />
+	<logger name="org.apache.ibatis" level="OFF" />
+	
+	<logger name="com.ft.transport.messageutils.AppMessageFactory" level="Info" />
+	<logger name="org.apache.ibatis" level="INFO" />
+	<logger name="com.feelingtouch.stwar4.sql" level="INFO" />
+	<logger name="com.feelingtouch.stwar4.nosql" level="INFO" />
+	<logger name="com.ft.core.GameObjectContainerImpl" level="INFO" />
+	<logger name="com.ft.core.AbstractEventComponent" level="INFO" />
+	<logger name="com.ft.core.GameObjectImpl" level="INFO" />
+	<logger name="com.ft.obj.war" level="INFO" />
+	<logger name="com.ft.stwar4.config" level="INFO" />
+	<logger name="com.ft.stwar4.condition.impl" level="INFO" />
+	<logger name="com.ft.transport.nettyimpl.endpoint.EndPointNettyImpl" level="INFO" />
+	
+	<logger name="org.quartz" level="INFO" />
+	<logger name="com.ft.timer" level="INFO" />
+	<logger name="org.apache.zookeeper.ClientCnxn" level="INFO" />
+
+</configuration> 
